@@ -17,14 +17,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-rainforest');
 ```
 
-## The "rainforestqa" task
+## The "rainforest" task
 
 ### Overview
-In your project's Gruntfile, add a section named `rainforestqa` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `rainforest` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  rainforestqa: {
+  rainforest: {
     options: {
       // Task-specific options go here.
     },
@@ -56,7 +56,7 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  rainforestqa: {
+  rainforest: {
     options: {},
     files: {
       'dest/default_options': ['src/testing', 'src/123'],
@@ -70,7 +70,7 @@ In this example, custom options are used to do something else with whatever else
 
 ```js
 grunt.initConfig({
-  rainforestqa: {
+  rainforest: {
     options: {
       separator: ': ',
       punctuation: ' !!!',

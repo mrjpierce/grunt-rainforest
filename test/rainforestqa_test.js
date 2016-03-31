@@ -22,7 +22,7 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.rainforestqa = {
+exports.rainforest = {
   setUp: function(done) {
     // setup here if necessary
     done();
