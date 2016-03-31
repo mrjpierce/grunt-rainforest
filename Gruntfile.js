@@ -1,6 +1,6 @@
 /*
- * grunt-rainforestqa
- * https://github.com/mrjpierce/grunt-rainforestqa
+ * grunt-rainforest
+ * https://github.com/mrjpierce/grunt-rainforest
  *
  * Copyright (c) 2016 James Pierce
  * Licensed under the MIT license.

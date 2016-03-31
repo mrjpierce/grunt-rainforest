@@ -1,6 +1,6 @@
 /*
- * grunt-rainforestqa
- * https://github.com/mrjpierce/grunt-rainforestqa
+ * grunt-rainforest
+ * https://github.com/mrjpierce/grunt-rainforest
  *
  * Copyright (c) 2016 James Pierce
  * Licensed under the MIT license.
@@ -16,10 +16,8 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('rainforestqa', 'A grunt plugin for running rainforest QA tasks', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      token: '',
-      testIds: [],
-      tags: []
-      apiBaseUrl: 'https://app.rainforestqa.com'
+      punctuation: '.',
+      separator: ', '
     });
 
     // Iterate over all specified file groups.
