@@ -16,8 +16,10 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('rainforestqa', 'A grunt plugin for running rainforest QA tasks', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      token: '',
+      testIds: [],
+      tags: []
+      apiBaseUrl: 'https://app.rainforestqa.com'
     });
 
     // Iterate over all specified file groups.
