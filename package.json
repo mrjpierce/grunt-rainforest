@@ -24,7 +24,8 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "rainforest": "rainforest"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
@@ -36,6 +37,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "rainforest-qa": "^1.2.5"
+    "shelljs": "^0.6.0"
   }
 }
