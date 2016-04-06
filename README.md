@@ -27,63 +27,38 @@ grunt.initConfig({
   rainforest: {
     options: {
       // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+    }
+  }
 });
 ```
 
 ### Options
 
-#### options.separator
+#### options.apiBaseUrl
 Type: `String`
-Default value: `',  '`
+Default value: `'https://app.rainforestqa.com'`
 
-A string value that is used to do something with whatever.
+Specify a different API url
 
-#### options.punctuation
+#### options.token
 Type: `String`
-Default value: `'.'`
+Default value: `''`
 
-A string value that is used to do something else with whatever else.
+The token provided to you by Rainfoest QA. Available at: [https://app.rainforestqa.com/settings/integrations?showApi=true](https://app.rainforestqa.com/settings/integrations?showApi=true)
+
+#### options.tag
+Type: `String`
+Default value: `''`
+
+Specify a specific group of tests that have been tagged as such.
+
+#### options.tag
+Type: `Boolean`
+Default value: `false`
+
+Specify whether the task should upload tests before running them.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  rainforest: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  rainforest: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
-```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
 ## Release History
-_(Nothing yet)_
+0.1.0 - Current Release
