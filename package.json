@@ -1,7 +1,7 @@
 {
   "name": "grunt-rainforest",
   "description": "A grunt plugin for running rainforest QA tasks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/mrjpierce/grunt-rainforest",
   "author": {
     "name": "James Pierce",
