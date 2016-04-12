@@ -17,7 +17,8 @@ module.exports = function(grunt) {
             token: '',
             tag: '',
             browsers: [],
-            upload: false
+            upload: false,
+            foreground: false
         });
 
         if(options.apiBaseUrl === '') {
@@ -55,12 +56,16 @@ module.exports = function(grunt) {
         }
 
         // Build run command
-        var runCmd = 'rainforest run'
+        var runCmd = 'rainforest run';
 
         if(options.tag !== '') {
-            runCmd += ' --tag ' + options.tag
+            runCmd += ' --tag ' + options.tag;
         } else {
             runCmd += ' all';
+        }
+
+        if(options.foreground) {
+            runCmd += ' --fg';
         }
 
         if (typeof options.browsers !== 'undefined' && options.browsers.length > 0) {

@@ -58,6 +58,12 @@ Default value: `false`
 
 Specify whether the task should upload tests before running them.
 
+#### options.foreground
+Type: `Boolean`
+Default value: `false`
+
+Results in the foreground. Will not return until the run is complete.
+
 ### Usage Examples
 
 ## Release History
