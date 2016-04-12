@@ -15,8 +15,7 @@ module.exports = function(grunt) {
     jshint: {
       all: [
         'Gruntfile.js',
-        'tasks/*.js',
-        '<%= nodeunit.tests %>'
+        'tasks/*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -36,7 +35,7 @@ module.exports = function(grunt) {
           upload: true
         }
       }
-    },
+    }
 
   });
 

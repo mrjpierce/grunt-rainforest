@@ -61,4 +61,4 @@ Specify whether the task should upload tests before running them.
 ### Usage Examples
 
 ## Release History
-0.1.0 - Current Release
+0.1.3 - Current Release

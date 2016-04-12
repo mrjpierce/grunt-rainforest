@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             apiBaseUrl: 'https://app.rainforestqa.com',
             token: '',
             tag: '',
-            browsers: []
+            browsers: [],
             upload: false
         });
 
